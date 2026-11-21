@@ -73,18 +73,14 @@ Polygon annotations contain a class ID followed by normalized coordinate pairs. 
 
 For polygon vertices, the conversion computes:
 
-\[
-x_{min}=\min(x_i),\quad x_{max}=\max(x_i)
-\]
-\[
-y_{min}=\min(y_i),\quad y_{max}=\max(y_i)
-\]
-\[
-x_c=\frac{x_{min}+x_{max}}{2},\quad y_c=\frac{y_{min}+y_{max}}{2}
-\]
-\[
-w=x_{max}-x_{min},\quad h=y_{max}-y_{min}
-\]
+$$
+\begin{aligned}
+x_{\min} &= \min(x_i), \quad x_{\max} = \max(x_i) \\
+y_{\min} &= \min(y_i), \quad y_{\max} = \max(y_i) \\
+x_c &= \frac{x_{\min} + x_{\max}}{2}, \quad y_c = \frac{y_{\min} + y_{\max}}{2} \\
+w &= x_{\max} - x_{\min}, \quad h = y_{\max} - y_{\min}
+\end{aligned}
+$$
 
 This conversion preserves the approximate location and extent of each annotated region but loses polygon-shape detail. It may produce identical bounding boxes from distinct polygons. An analysis identified 82 such exact duplicate rows across the converted dataset; those duplicates were removed from the converted copy only. The original Roboflow export was not modified, and a backup of the pre-cleaning converted labels was created.
 
@@ -118,7 +114,6 @@ The GitHub repository is intended to contain source code and documentation, not 
 welding-defect-object-detection/
 ├── README.md
 ├── .gitignore
-├── GITHUB_YUKLEME_REHBERI.md
 ├── docs/                         # Project notes and technical documentation (Turkish)
 ├── scripts/                      # Dataset and experiment utility scripts
 │   └── README.md
