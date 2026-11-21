@@ -1,6 +1,6 @@
 # Welding Defect Detection with YOLO26
 
-> **Graduation project — current status:** dataset preparation, annotation conversion and validation, development-environment setup, and a one-epoch training smoke test have been completed. Full model training and final performance evaluation are still pending.
+> **Project — current status:** dataset preparation, annotation conversion and validation, development-environment setup, and a one-epoch training smoke test have been completed. Full model training and final performance evaluation are still pending.
 
 ## Project Overview
 
