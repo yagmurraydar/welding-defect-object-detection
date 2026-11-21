@@ -1,0 +1,44 @@
+# Python sanal ortamları
+.venv/
+venv/
+envs/
+
+# Python önbellekleri
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Eğitim çıktıları ve model dosyaları
+runs/
+wandb/
+*.pt
+*.onnx
+*.engine
+*.torchscript
+*.tflite
+*.mlmodel
+*.mlpackage/
+
+# Yerel veri setleri ve yedekleri
+Weld quality inspection.v9i.yolov8/
+Weld quality inspection.detection/
+Weld quality inspection.detection_labels_backup/
+
+# Yerel konfigürasyon ve gizli bilgiler
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Loglar ve geçici dosyalar
+*.log
+*.tmp
+*.cache
+
+# IDE / işletim sistemi dosyaları
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
